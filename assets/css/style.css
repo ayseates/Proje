@@ -1,0 +1,754 @@
+body {
+  background-image: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.w-100 {
+  width: 100%;
+}
+.d-flex {
+  display: flex;
+}
+
+.katalog {
+  width: 100%;
+  margin-top: 10px;
+}
+.resim {
+  width: 90%;
+  height: 100%;
+  border: 1px solid black;
+  border-radius: 10px;
+  position: relative;
+}
+.resim img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.layer{
+  background-color: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    
+}
+
+.layer:hover {
+  background:rgba(77, 77, 77, 0.7);
+  cursor :default;
+}
+
+.baslik {
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  bottom: 0px;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  border-radius: 0px 0px 10px 10px;
+}
+.anabaslik {
+  width: 100%;
+  height: 75px;
+  justify-content: space-between;
+  padding: 10px;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.4);
+  align-items: center;
+}
+.baslik a {
+  color: white;
+  text-decoration: none;
+}
+
+.erkekMenuYazi{
+  color: white;
+  text-decoration: none;
+}
+
+.erkekMenuYazi:hover{
+  color: rgb(183, 186, 186);
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+.resim-container {
+  text-align: center;
+  height: 100%;
+}
+
+.myslider img {
+  height: 95vh;
+}
+ul {
+  display: flex;
+  text-align: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+li {
+  display: inline-block;
+}
+li a {
+  display: block;
+  border-radius: 15px/10px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+li a:hover {
+  background-color: white;
+}
+ul li ul {
+  display: none;
+  position: absolute;
+  width: 100px;
+}
+ul li:hover ul {
+  display: block;
+}
+li ul li {
+  display: block;
+}
+a:hover {
+  color: black;
+}
+
+#box {
+  max-width: 150px;
+  position: relative;
+}
+
+#box .fa-search {
+  position: absolute;
+  top: 14px;
+  left: 12px;
+  font-size: 20px;
+  color:transparent;
+}
+
+#search {
+  width: 100px;
+  box-sizing: border-box;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 4px;
+  font-size: 18px;
+  padding: 6px 10px 6px 20px;
+  -moz-transition: width 0.4s ease-in-out;
+  -o-transition: width 0.4s ease-in-out;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+#search:focus {
+  width: 100%;
+}
+.my-footer {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  color: white;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+div.container {
+  overflow: hidden;
+  width: 120%;
+  display: flex;
+  padding: 10px;
+}
+div.sol {
+  width: 40%;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 25px/20px;
+  text-align: center;
+}
+
+div.orta {
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 25px/20px;
+  text-align: center;
+}
+
+div.sag {
+  width: 40%;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 25px/20px;
+  text-align: center;
+}
+.iconlar img {
+  float: left;
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 10px;
+  opacity: 50%;
+  margin: 5px;
+}
+input[type="submit"] {
+  width: 20%;
+  background-color: #dc3545;
+  color: white;
+  padding: 5px 4px;
+  margin: 2px 0;
+  border: none;
+  border-radius: 1px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: #dc3545;
+}
+
+.center {
+  text-align: center;
+}
+.pagination {
+  text-align: center;
+  font-style: italic;
+  display: inline-block;
+  margin-top: 20px;
+  padding-left: 20px;
+}
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  border: 1px solid rgb(0, 0, 0);
+  margin: 0 4px;
+}
+.pagination a:hover:not(.active) {
+  background-color: rgba(255, 255, 255, 0.582);
+}
+.pagination img {
+  height: 120px;
+  width: 110px;
+}
+/* -------------------------------------CİLT TEMİZLİK-------------------------------------------------------------------------- */
+.cilt-resim {
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: white;
+  width: 500px;
+  margin-left: 5px;
+  margin-top: 130px;
+}
+.container.cilt-resim img {
+  padding-top: 50px;
+  width: 100%;
+}
+.cilt-resim img {
+  width: 100%;
+}
+.cilt-baslik {
+  background-color: white;
+  color: #000000;
+  width: 100%;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+.cilt-baslik a {
+  color: black;
+  text-decoration: none;
+}
+.cilt-baslik a:hover {
+  color: black;
+  text-decoration: none;
+}
+.mt-3 {
+  margin-top: -6.5rem !important;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 0px;
+  cursor: default;
+  margin: 0 0 0.5em 0;
+}
+
+input[type="checkbox"] {
+  height: 0;
+  width: 0;
+}
+
+input[type="checkbox"] + label {
+  position: relative;
+  display: flex;
+  margin: 0.6em 0;
+  align-items: center;
+  color: #000000;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.23, 1);
+}
+input[type="checkbox"] + label > ins {
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: 2em;
+  height: 0;
+  width: 100%;
+  overflow: hidden;
+  text-decoration: none;
+  transition: height 300ms cubic-bezier(0.4, 0, 0.23, 1);
+}
+input[type="checkbox"] + label > ins > i {
+  position: absolute;
+  bottom: 0;
+  font-style: normal;
+  color: #000000;
+}
+input[type="checkbox"] + label > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1em;
+  width: 1em;
+  height: 1em;
+  background: transparent;
+  border: 2px solid #000000;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.23, 1);
+}
+
+input[type="checkbox"] + label:hover,
+input[type="checkbox"]:focus + label {
+  color: rgb(0, 0, 0);
+}
+input[type="checkbox"] + label:hover > span,
+input[type="checkbox"]:focus + label > span {
+  background: #dc354652;
+}
+input[type="checkbox"]:checked + label > ins {
+  height: 100%;
+}
+
+input[type="checkbox"]:checked + label > span {
+  border: 0.5em solid #dc3545;
+  animation: shrink-bounce 200ms cubic-bezier(0.4, 0, 0.23, 1);
+}
+input[type="checkbox"]:checked + label > span:before {
+  content: "";
+  position: absolute;
+  top: 0.6em;
+  left: 0.2em;
+  border-right: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  transform: rotate(45deg);
+  transform-origin: 0% 100%;
+  animation: checkbox-check 125ms 250ms cubic-bezier(0.4, 0, 0.23, 1) forwards;
+}
+
+@keyframes shrink-bounce {
+  0% {
+    transform: scale(1);
+  }
+  33% {
+    transform: scale(0.85);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes checkbox-check {
+  0% {
+    width: 0;
+    height: 0;
+    border-color: #ffffff;
+    transform: translate3d(0, 0, 0) rotate(45deg);
+  }
+  33% {
+    width: 0.2em;
+    height: 0;
+    transform: translate3d(0, 0, 0) rotate(45deg);
+  }
+  100% {
+    width: 0.2em;
+    height: 0.5em;
+    border-color: #ffffff;
+    transform: translate3d(0, -0.5em, 0) rotate(45deg);
+  }
+}
+.secim {
+  border: 2px solid black;
+  margin-top: -373px;
+  margin-left: 60%;
+  column-count: 2;
+  font-weight: 500;
+  width: 80%;
+  border-radius: 7px;
+  border-color: black;
+  background-color: #ffffff;
+}
+.secim-baslik {
+  padding-left: 200px;
+  margin: auto;
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  bottom: 570px;
+  color: rgb(0, 0, 0);
+}
+.cilt-tipi {
+  padding-top: 20px;
+  display: flex;
+}
+
+input[type="radio"] {
+  padding: 5px;
+  display: flex;
+}
+
+input[type="radio"] + label {
+  padding: 3px;
+  color: #000000;
+  font-family: Arial, sans-serif;
+  font-weight: 500;
+}
+
+input[type="radio"] + label span {
+  display: inline-block;
+  width: 7px;
+  height: 19px;
+  margin: -2px 1px 0 0;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.urun-sitesi {
+  border-radius: 7px;
+  border: 2px solid black;
+  background-color: #ffffff;
+  padding: 16px;
+  margin: 7px;
+  text-align: right;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  bottom: 189px;
+  color: rgb(0, 0, 0);
+  margin-left: 52%;
+}
+
+/* --------------------------------------------------------------------MAKYAJ---------------------------------------------- */
+.makyaj-baslik {
+  background-color: white;
+  color: #000000;
+  width: 100%;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+.makyaj-baslik a {
+  color: black;
+  text-decoration: none;
+}
+.makyaj-baslik a:hover {
+  color: black;
+  text-decoration: none;
+}
+.makyaj-resim {
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: white;
+  width: 25%;
+  padding: 5px;
+  margin-left: 5px;
+  margin-top: 15px;
+}
+.katalog.makyaj-resim img {
+  width: 100%;
+}
+.makyaj-resim img {
+  width: 90%;
+  height: 80%;
+  padding-left: 30px;
+}
+.makyaj-baslik {
+  background-color: white;
+  color: #000000;
+  width: 100%;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+.makyaj-baslik a {
+  color: black;
+  text-decoration: none;
+}
+.makyaj-baslik a:hover {
+  color: black;
+  text-decoration: none;
+}
+/* ----------------------------------------------------------------------------SAÇ-------------------------------------------------- */
+
+.sac-baslik {
+  background-color: white;
+  color: #000000;
+  width: 100%;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+.sac-baslik a {
+  color: black;
+  text-decoration: none;
+}
+.sac-baslik a:hover {
+  color: black;
+  text-decoration: none;
+}
+.sac-resim {
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: white;
+  width: 25%;
+  padding: 5px;
+  margin-left: 5px;
+  margin-top: 15px;
+}
+.katalog.sac-resim img {
+  width: 100%;
+}
+.sac-resim img {
+  width: 90%;
+  height: 80%;
+  padding-left: 30px;
+}
+.sac-baslik {
+  background-color: white;
+  color: #000000;
+  width: 100%;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+.sac-baslik a {
+  color: black;
+  text-decoration: none;
+}
+.sac-baslik a:hover {
+  color: black;
+  text-decoration: none;
+}
+/* --------------------------------------------------------------------TIRNAK-------------------------------------------- */
+
+.tırnak-baslik {
+  background-color: white;
+  color: #000000;
+  width: 100%;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+.tırnak-baslik a {
+  color: black;
+  text-decoration: none;
+}
+.tırnak-baslik a:hover {
+  color: black;
+  text-decoration: none;
+}
+.tırnak-resim {
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: white;
+  width: 25%;
+  padding: 5px;
+  margin-left: 5px;
+  margin-top: 15px;
+}
+.katalog.tırnak-resim img {
+  width: 100%;
+}
+.tırnak-resim img {
+  width: 90%;
+  height: 80%;
+  padding-left: 30px;
+}
+.tırnak-baslik {
+  background-color: white;
+  color: #000000;
+  width: 100%;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+.tırnak-baslik a {
+  color: black;
+  text-decoration: none;
+}
+.tırnak-baslik a:hover {
+  color: black;
+  text-decoration: none;
+}
+.duyurular img {
+  height: 65vh;
+  padding-left: 22%;
+  padding-top: 20px;
+}
+.indirim {
+  display: flex;
+}
+.carousel-item {
+  position: relative;
+  float: left;
+  width: 100%;
+  margin-right: -100%;
+  backface-visibility: hidden;
+}
+/* --------------------------------------------------------ERKEK ANASAYFA-------------------------------------------- */
+
+.erkeksayfa {
+  margin: 0;
+  padding: 0;
+  background: #11998e;
+}
+/* //////////////////////////// */
+.girisArkapilan {
+  display: flex;
+  background-size: cover;
+  text-align: center;
+}
+
+.kadinArka {
+  width: 50%;
+  text-align: center;
+}
+
+.kadinArka:hover {
+  width: 55%;
+  text-align: center;
+  transition: 1s;
+}
+
+.kadinArka img {
+  width: 60%;
+}
+
+.erkekArka {
+  width: 50%;
+  text-align: center;
+}
+
+.erkekArka:hover {
+  width: 55%;
+  transition: 1s;
+}
+
+.erkekArka img {
+  width: 60%;
+  
+}
+
+.logWallpaper {
+  background-image:url("../images/giris/3deneme.jpg");
+  background-size: cover;
+  padding-top: 1px;
+  height: 103vh;
+  padding-left: 145px;
+    padding-right: 145px;
+}
+
+.logImgContent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logTitle {
+  height: 25%;
+  font-size: 25px;
+  color: #212529;
+  font-style: italic;
+  text-align: center;
+  text-decoration: none;
+}
+
+.leftColumn {
+  width: 40%;
+  text-align: center;
+  text-decoration: none;
+}
+
+.rightColumn {
+  width: 40%;
+  text-align: center;
+  text-decoration: none;
+}
+
+.middleColumn {
+  width: 20%;
+  text-align: center;
+  text-decoration: none;
+}
+
+.logImg{
+  padding-right: 20px;
+    transition: transform .5s ease;
+    text-decoration: none;
+    margin-top: 50px;
+}
+.logImg img{
+  height: 320px;
+}
+.logImg img:hover {
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+.logginSlogan{
+  text-shadow:2px 2px 20px rgb(255, 255, 255);
+  color:rgb(0, 0, 0);
+    text-align: center;
+    font-family: Roboto;
+  font-size:34px;
+  padding-top: 2%;
+  font-weight: bold;
+}
+.logWallpaperErkek {
+  margin: 0;
+  padding: 0;
+  background: #11998e;
+}
+.logo img {
+  padding-top: 218px;
+  margin: -73px;
+  width: 130%;
+}
+.panel {
+  padding-right: initial;
+  background-color: #f5f5f5;
+  margin: 116px;
+  border-radius: 40px;
+  -webkit-box-shadow: 0 0 6px 4px black;
+	-moz-box-shadow: 0 0 6px 4px black;
+	box-shadow: 0 0 6px 4px black;
+/*   
+	-webkit-box-shadow: 0 0 0 4px white, 0 6px 4px black;
+	-moz-box-shadow: 0 0 0 4px white, 0 6px 4px black;
+	box-shadow: 0 0 0 4px white, 0 6px 4px black; */
+}
