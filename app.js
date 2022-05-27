@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const mongoose = require('mongoose');
-const userRouter = require('../loginDeneme/public/server/routers/userRouter');
+const userRouter = require('../Proje/public/server/routers/userRouter');
 // const cors = require("cors")
 const axios =require('axios')
 
